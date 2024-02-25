@@ -1,6 +1,7 @@
 import express from 'express'
 import mongosee from 'mongoose'
 import dotenv from 'dotenv'
+import userRouter from './routes/user.route.js';
 
 dotenv.config();
 
@@ -12,6 +13,9 @@ console.log(err);
 
 const app=express()
 
+
 app.listen(3000,()=>{
     console.log("Listening on Port 3000");
 });
+
+app.use('/api/user',userRouter);
