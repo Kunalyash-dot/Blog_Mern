@@ -77,7 +77,7 @@ const dispatch=useDispatch();
                   <Spinner size='sm' />
                   <span className='pl-3'>Loading...</span>
                   </>
-                ):('Sign Up')}
+                ):('Sign In')}
                 </Button>
                 <OAuth />
           </form>
@@ -87,7 +87,7 @@ const dispatch=useDispatch();
           </div>
           {errormessage && <Alert className='mt-5' color='failure'>
             {errormessage};
-            </Alert>}
+            </Alert> }
         </div>
 
       </div>
